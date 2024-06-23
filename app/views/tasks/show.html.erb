@@ -1,5 +1,8 @@
-<h1><%= @task.title %></h1>
-<p>Details: <%= @task.details %></p>
-<p>Completed: <%= @task.completed %></p>
+<h2><%= @task.title %></h2>
+<div class="bg-light py-3 border rounded">
+  <%= @task.details %>
+</div>
+<p><%= @display %></p>
+<hr>
 <p><%= link_to("Edit task", edit_task_path(@task) ) %></p>
 <p><%= link_to("Back to list", tasks_path) %></p>
